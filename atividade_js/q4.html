@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão4</title>
+</head>
+<body>
+    <script>
+            // Ler a idade da pessoa
+    const idade = parseInt(prompt("Digite a idade da pessoa:"));
+
+    // Verificar a condição e exibir a mensagem correspondente
+    if (idade < 16) {
+        alert("Não tem idade para votar");
+
+    } else if (idade >= 16 && idade <= 17 || idade >= 70) {
+        alert("Voce pode votar se quiser");
+
+    } else if (idade >= 18 && idade <= 69) {
+         alert("É obrigada a votar.");
+    } 
+    </script>
+</body>
+</html>

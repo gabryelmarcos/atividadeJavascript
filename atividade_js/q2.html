@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+</head>
+<body>
+    <script>
+        const numero1 = parseInt(prompt("Digite o primeiro numero:"));
+        const numero2 = parseInt(prompt("Digite o primeiro numero:"));
+        const numero3 = parseInt(prompt("Digite o primeiro numero:"));
+
+        let maiorValor = numero1;
+        let menorValor = numero1;
+        
+        if(numero2 > maiorValor){
+            maiorValor = numero2;
+        }
+
+        if(numero3 > maiorValor){
+            maiorValor = numero3;
+        }
+
+        if(numero2 < menorValor){
+            menorValor = numero2;
+        }
+
+        if(numero3 < menorValor){
+            menorValor = numero3;
+        }
+
+        alert("O numero "+maiorValor+" é o maior numero e o "+menorValor+" é o menor valor");
+        
+    </script>
+</body>
+</html>

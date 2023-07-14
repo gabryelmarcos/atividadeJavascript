@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão5</title>
+</head>
+<body>
+    <script>
+
+        const N = parseInt(prompt("Digite um número N:"));
+
+        function nPrimo(num) {
+        if (num <= 1) {
+            return false;
+        }
+        
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
+            return false;
+            }
+        }
+        
+        return true;
+        }
+
+        
+        console.log("Números primos menores que", N + ":");
+
+        for (let i = 2; i < N; i++) {
+        if (nPrimo(i)) {
+            console.log(i);
+        }
+}
+
+    </script>
+</body>
+</html>
